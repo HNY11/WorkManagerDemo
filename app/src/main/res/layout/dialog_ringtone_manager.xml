@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        ads:cardCornerRadius="5dp">
+
+     <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:background="@color/green">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:text="Battery Alarm is running"
+                android:background="@color/white"
+                android:textColor="@android:color/darker_gray"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:padding="5dp"/>
+
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="50dp"
+                android:onClick="Close"
+                android:layout_alignParentEnd="true"
+                android:text="X"
+                android:textColor="@android:color/darker_gray"
+                android:background="@android:color/transparent"/>
+
+      </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="1dp">
+            <!--<com.airbnb.lottie.LottieAnimationView-->
+                <!--android:id="@+id/lottieView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="200dp"-->
+                <!--ads:lottie_rawRes="@raw/ring_bell"-->
+                <!--ads:lottie_loop="true"-->
+                <!--ads:lottie_autoPlay="true"-->
+                <!--/>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="1dp">
+
+                <TextView
+                    android:id="@+id/text_percentage_interval"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="batteryStartLevel to BatteryStopLevel"
+                    android:textColor="@android:color/darker_gray"
+                    android:padding="5dp"
+                    android:textSize="18dp"/>
+
+                <TextView
+                android:id="@+id/txtcharginginfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:textAlignment="center"
+                android:background="@color/white"
+                android:textSize="15dp"
+                    android:textColor="@android:color/darker_gray"
+                android:text="(disconnect the charger to stop or press the button below)" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttoncanceldialog"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="center"
+                android:background="@drawable/curved_rectangle"
+                android:text="STOP"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
